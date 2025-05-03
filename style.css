@@ -1,0 +1,197 @@
+:root {
+    --backgr-color:rgb(0, 0, 0);
+    --text-color:white ;
+    --text-color-secondary:#00de75 ;
+    --primary-color:#00de75 ;
+    --secondary-color:white ;
+    --tertiary-color:#009951 ;
+    --quaternary-color:#404040 ;
+    --quinary-color:#00ff87;
+}
+body {
+    background-color: var(--backgr-color);
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
+}
+.header-container {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.logo h1 {
+    color: #fff;
+    font-family: 'Train One', serif;
+    font-size: 40px;
+    background: var(--primary-color) ;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: flex;
+}
+/* ======================================================================================================================================================================================================== */
+.search_bar {
+    width: 800px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.input {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    font-weight: 500;
+    font-size: .8vw;
+    color: #fff;
+    background-color: rgb(28,28,30);
+    box-shadow: 0 0 .4vw rgba(0,0,0,0.5), 0 0 0 .15vw transparent;
+    border-radius: 0.4vw;
+    border: none;
+    outline: none;
+    padding: 0.4vw;
+    width: 700px;
+    transition: .4s;
+  }
+  .input:hover {
+    box-shadow: 0 0 0 .15vw rgba(135, 235, 183, 0.186);
+  }
+  .input:focus {
+    box-shadow: 0 0 0 .15vw rgb(80, 238, 183);
+  }
+/* ======================================================================================================================================================================================================== */
+.nav-menu ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+.nav-menu a {
+    color: #fff;
+    text-decoration: none;
+    font-family: 'Prosto One', serif;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+.nav-menu a:hover {
+    color: var(--quinary-color);
+}
+.title_img_container{
+    display:flex;
+    justify-content: space-between ;
+    margin-top: 5%;
+    position: relative;
+}
+.title-main {
+    color: var(--text-color);
+    font-family: "Prosto One", serif;
+    font-size: 80px;
+}
+.title-container {
+margin-left: 5%;
+width: 40%
+}
+.abstrtact_image {
+    width: 800px;
+    height: 600px;
+    padding-top:18% ;
+}
+.abstrtact_image_container {
+z-index: 1;
+width: 44%;
+position: relative;
+background-image: url("10.png");
+height: 1200px ;
+}
+.summ_info{
+    color:var(--text-color);
+    font-family: "Cormorant Unicase";
+    font-size: 40px;
+    width: 100%;
+    margin-top: 10% ;
+}
+button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 35px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+   }
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   button:hover {
+    color: #e8e8e8;
+   }
+   button:hover::before {
+    width: 100%;
+   }
+.btns_main {
+    display: flex;
+    gap:30px
+}
+
+.second_title_text {
+    color:#ffffff;
+    font-family:"Prosto One", serif ;
+    font-size: 70px;
+}
+
+.second_title_text_container{
+    display: flex;
+    justify-content: center;
+}
+
+.second_abstrtact_image{
+    background-image: url("9.png");
+    width: 1280px;
+    height:1280px;
+    position: relative;
+    z-index: 2;
+}
+
+.second_abstrtact_image_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.grid-text-container {
+    display: flex;
+    align-items: center;
+    height: 1280px;
+}
+.grid-text {
+    width: 1000px;
+    height: 300px;
+    color:white;
+    text-align: center;
+    background-color: #000000d5;
+    font-family:"Prosto One", serif ;
+    font-size:25px;
+    padding-top: 50px
+}
